@@ -1,0 +1,165 @@
+<html>
+<head>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    background-image:url("Lemm.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.textbox{      
+    width:40%;
+    padding:30px;
+    background-color: rgba(20,30,60,0.6);
+    border-radius:20px;
+    max-height:80vh;
+    overflow-y:auto;
+}
+::-webkit-scrollbar-track{
+    background: rgba(20,30,40,0.5);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(180,220,255,0.6);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(220,240,255,0.8);
+}
+::-webkit-scrollbar{
+    width:6px;
+}
+h1{
+    font-family:Trajan-Regular;
+    font-size:350%;
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+
+p{
+    font-family:PerpetuaTitlingMTSd-Lt;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:150%
+}
+details{
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:rgba(0,0,0,0.35);
+    padding:10px;
+    border-radius:10px;
+    font-family:PerpetuaTitlingMTSd-Lt;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:100%
+}
+summary{
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    font-family:PerpetuaTitlingMTSd-Lt;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:125%
+}
+</style>
+<title>Lemm</title>
+</head>
+<body>
+<audio controls autoplay loop>
+<source src="09. City of Tears.mp3" type="audio/mpeg">
+</audio>
+<div class="textbox">
+<h1><b><u><i>RELIC SEEKER LEMM</i></u></b></h1>
+<details>
+<summary>Lore</summary>
+<p>Lemm moved into his shop in the City of Tears at some point after the place was already empty and everyone in the tower was dead. He explores his current location and covets antiques, gleaning any information on the land's history.</p>
+<p>While Lemm happily discusses his discoveries and hypotheses, he guards his collection and is not willing to sell any of it. He does not seek company unless they bring him more material for his collection.</p>
+<p>When the player sells relics to Lemm, he'll give some tidbits of lore about the kingdom
+<span onclick="toggleText('relicdialog')" 
+style="color:lightblue; cursor:pointer; text-decoration:underline;">
+
+(Read dialogue)
+
+</span>
+
+<span id="relicdialog" style="display:none;">
+
+<br><br>
+<b>Wanderer's Journal</b><br>
+First: "A Wanderer's Journal, eh? Though they're common finds about the kingdom, I much enjoy the deciphering of their text. Read together they paint a morbid tale. It seems fate was unkind to most who travel within Hallownest's ruin."<br><br>
+Second: "Another Wanderer's Journal? I might not offer a lot for each but they're plentiful about the caverns and I doubt you'll find another willing to make trade for Geo."<br><br>
+Third: "A Wanderer's Journal? Yes. Yes. I'll add it to the pile with the others.I don't know when I'll get to decipher this one. It's long hard work translating the many languages of the bugs that explore these caverns."<br><br>
+Fourth: "A Wanderer's Journal? You've a knack for finding these. Corpses must be frequent on your journey. No doubt your nail's created many more."<br><br>
+Fifth: "Another Wanderer's Journal, eh? This journal is of traditional stone type. Text endures well upon it. In its declining age, this city switched from stone to parchment woven of spider's silk. It's a small tragedy, but the moisture in these towers has rendered most of those texts illegible."<br><br>
+Sixth: "A Wanderer's Journal? Have you heard that saying about stone journals? 'If danger lurks close by and your nail has dulled with wear, Just swing your journal at your foes with blunt and deadly flair.' S'a good one isn't it! And accurate. They sure have a heft to them."<br><br>
+Seventh: "What's that? A Wanderer's Journal? I've so many of these now. Once I get around to deciphering them all, I'll be the preeminent scholar on Hallownest's dead."<br><br>
+Eighth+: "A Wanderer's Journal? It's quite incredible how many of these you've collected. You must have travelled the breadth of the kingdom to accrue such a haul."<br><br><br>
+
+<b>Hallownest Seal:</b><br>
+First:"A Hallownest Seal, eh? Very interesting this. Do you know of the Kingdom's five great knights? They're revered figures of Hallownest, often mentioned in the annals of the Kingdom, but only as a group. Both their names and appearance seem to have been expunged from history. So long has passed since their time. It'd be a grand achievement to discover their identities."<br><br>
+Second:"Another Hallownest Seal? Pass it over.Ah. I enjoy collecting their like, but there's little information to be gleaned of each.Mind you, they do keep a nice shine about them and there's nothing wrong with appreciating something purely on aesthetic merits."<br><br>
+Third:"A Hallownest Seal, eh? Give it here. Do you have anything else for me? If not, get your damp little self out of my home."<br><br>
+Fourth:"Another Hallownest Seal?Others have told me there's a statue out by the city's entrance depicting a large knightly figure. Could be one of the Kingdom's great five. I'd have looked it over myself, but the gate's long been shut tight and it's too much hassle taking the long way round with all those blasted husks about."<br><br>
+Fifth:"Yep, that's another Hallownest Seal alright. The shop'll be overflowing with these things soon. Gah! I'd never guessed so many would still be lying around. If they're as common as you make them seem, maybe I've been offering too much for them?"<br><br>
+Sixth:"Another Hallownest Seal? Pass it over then."<br><br>
+Seventh+:"A Hallownest Seal? You're a talented collector, alright. The best I've met. If you keep at it, I worry I'll run out of space in the shop!"<br><br><br>
+
+<b>King's Idol:</b><br>
+First:"A King's Idol, eh? Hallownest's king was an elusive figure, deified by the citizens. With the king rarely seen, worship was offered through these idols. There's an expert craft to them. Few alive could match this skill."<br><br>
+Second:"A King's Idol? If you look closely, each of these idols is subtly different. There are fine engravings about them that take some time to decipher. I suspect each was tailored to the owner. A personalised symbol of the king's omnipotence."<br><br>
+Third:"Another King's Idol? Have you visited the remnants of his palace? It's down below this city, in the bedrock of the kingdom. Must've been an impressive sight in its time. Now there's nothing left. It's a strange thing though. There are no signs of conflict around the area. It's as though the whole place just vanished."<br><br>
+Fourth:"A King's Idol? I've often wondered the true visage of the king. Depictions are of an imposing, gleaming figure and a fiercely horned crown. I suspect there's much embellishment in the imagery though. A ruler seeking worship tends to hide their blemishes. It'd do no good to appear a common bug."<br><br>
+Fifth+:"A King's Idol? With as many of these as you've delivered, the other Relic Seekers are like to think I've gone mad for the King! Pah! Who am I kidding. They'll only be jealous of my collection. Find me more!"<br><br><br>
+
+<b>Arcane Egg:</b><br>
+First: "An Arcane Egg, eh? Now this, this is an ancient thing. These relics are the prize of my profession. There's knowledge hidden within, though it's very difficult, painstaking work to extract. One large understanding can be gleaned though. This civilization may claim itself the first, but something else did exist within this place before Hallownest. Each egg offers a narrow glimpse into that forgotten age."<br><br>
+Second: "Another Arcane Egg? It's a rare chance to own two of these. I'll be the envy of all my colleagues, though my purse is feeling much lighter for it. These eggs are the most desired find from time before Hallownest, but they're not the only remnant of that age. You may have come upon them, those old statues that seem a store for soul? They too prove its existence, though in a larger, cruder form."<br><br>
+Third: "A third Arcane Egg? You're an exceptional explorer to have found so many. An egg is a perfect protective form. In Hallownest we use stone journals or tablets, our text engraved atop. These eggs are far more secure. Their records are stored within. In fear of damaging the eggs, I'm only able to access the outer layer, but it's clear those in the distant past could somehow access information stored even deeper within. If only I could find a way to do so. Just think of the discoveries to be made!"<br><br>
+Fourth: "A fourth Arcane Egg! I wouldn't have believed it possible. I've never met a bug with your knack for uncovering this Kingdom's treasures. You must have some sort of sense about you? Or maybe these eggs are somehow drawn to you. My fellows have claimed there's a will of sorts within each egg, that each seeks its own bearer, or reject them. That'd be a subtle power indeed, and I remain skeptical. Relic Seekers are prone to confusing facts with fable."
+
+</span>
+
+</p>
+
+<script>
+
+function toggleText(id){
+
+var text=document.getElementById(id);
+
+if(text.style.display==="none"){
+
+text.style.display="inline";
+
+}
+
+else{
+
+text.style.display="none";
+
+}
+
+}
+
+</script>
+</details>
+<details>
+<summary>Relics</summary>
+<p>Wanderer's Journal:<br>
+200 Geo each; 14 in total around Hallownest</p>
+<p>Hallownest Seal:<br>
+450 Geo each; 17 in total around Hallownest</p>
+<p>King's Idol:<br>
+800 Geo each; 8 in total around Hallownest</p>
+<p>Arcane Egg:<br>
+1200 Geo each; 4 in total around Hallownest</p>
+</details>
+</div>
+</body>
+</html>
