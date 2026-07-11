@@ -1,0 +1,138 @@
+<html>
+<head>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    background-image:url("Seer Room.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.textbox{      
+    width:40%;
+    padding:30px;
+    background-color: rgba(20,30,60,0.7);
+    border-radius:20px;
+    max-height:80vh;
+    overflow-y:auto;
+    margin-left:auto;
+    margin-right:40px;
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(20,30,40,0.5);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(180,220,255,0.6);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(220,240,255,0.8);
+}
+::-webkit-scrollbar{
+    width:6px;
+}
+h1{
+    font-family:Trajan-Regular;
+    font-size:350%;
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+
+p{
+    font-family:PerpetuaTitlingMTSd-Lt;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:150%
+}
+details{
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:rgba(0,0,0,0.35);
+    padding:10px;
+    border-radius:10px;
+    font-family:PerpetuaTitlingMTSd-Lt;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:100%
+}
+summary{
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    font-family:PerpetuaTitlingMTSd-Lt;
+    color:white;
+    text-shadow:2px 2px 5px black;
+    font-size:125%
+}
+
+</style>
+<title>The Seer</title>
+</head>
+
+<body id="pagebody">
+
+<audio controls autoplay loop>
+<source src="15. Resting Grounds.mp3" type="audio/mpeg">
+</audio>
+
+<div class="textbox">
+
+<h1><b><u><i>THE SEER: LAST OF THE MOTHS</i></u></b></h1>
+
+<details ontoggle="changeImage(this,'Seer Room.jpg','Seer Room.jpg')">
+<summary>Lore</summary>
+
+<p>The Seer is the last surviving member of the Moth Tribe. She tends the graves of the Resting Grounds and guides the Knight because she regrets that her ancestors forgot about their creator, the Radiance.</p>
+
+</details>
+
+
+<details ontoggle="changeImage(this,'Seer Room.jpg','Seer Dream Realm.jpg')">
+<summary>Quest</summary>
+
+<p>The Seer brings the Knight back to her house after they are trapped in the Dream Realm by the Dreamers.</p>
+
+<p>She gives the Knight the Dream Nail, which grants access into the dreams of NPCs and enemies along with other abilities. She then urges the Knight to go and collect as much Essence as possible in order to fully awaken the Dream Nail.</p>
+
+<p>When the Knight has collected 2400 Essence and returns to her, she explains more about the history of Hallownest, after which she dissipates into Essence.</p>
+
+</details>
+
+</div>
+
+
+<script>
+
+function changeImage(element, defaultImg, activeImg){
+
+if(element.open){
+
+document.getElementById("pagebody").style.backgroundImage=
+"url('" + activeImg + "')";
+
+}
+
+else{
+
+document.getElementById("pagebody").style.backgroundImage=
+"url('" + defaultImg + "')";
+
+}
+
+}
+
+</script>
+
+</body>
+</div>
+</body>
+</html>
