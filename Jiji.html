@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{
     margin:0;
@@ -50,6 +51,27 @@ p{
     color:white;
     text-shadow:2px 2px 5px black;
     font-size:150%
+}
+@media (max-width: 768px) {
+
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .textbox{
+        width:90%;
+        margin:auto;
+    }
+
+    p{
+        font-size:120%;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
 }
 </style>
 <title>Jiji</title>
